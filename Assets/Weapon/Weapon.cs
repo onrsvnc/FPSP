@@ -12,6 +12,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] ParticleSystem muzzleEffect;
     [SerializeField] GameObject hitEffect;
     [SerializeField] GameObject mainCamera;
+    [SerializeField] Ammo ammoSlot;
+
 
     bool isShooting = false;
 
@@ -21,7 +23,7 @@ public class Weapon : MonoBehaviour
         if(Input.GetButton("Fire1") && isShooting != true)  
         {
             isShooting = true;
-            StartCoroutine(AutoShoot());
+            StartCoroutine(AutoShoot());  
         }
 
         if(Input.GetButtonUp("Fire1"))
@@ -30,13 +32,26 @@ public class Weapon : MonoBehaviour
             isShooting = false;
             muzzleEffect.Stop();
         }
-        WeaponDamageReset();
+        if(isShooting == false)
+        {
+            WeaponDamageReset();
+        }
     }
 
     void Shoot()
     {
-        PlayMuzzleEffect();
-        ProcessRaycast();
+        if(ammoSlot.GetCurrentAmmo() > 0)
+        {
+            PlayMuzzleEffect();
+            ProcessRaycast();
+            ammoSlot.ReduceCurrentAmmo();
+        } 
+        else
+        {
+           StopCoroutine(AutoShoot());
+           isShooting = false;
+           muzzleEffect.Stop();
+        }
     }
 
     void PlayMuzzleEffect()
@@ -56,7 +71,9 @@ public class Weapon : MonoBehaviour
                 WeaponDamageReset(); 
                 return; 
             }
+            
             //todo we can add here another hit effect for enemy hits
+            weaponDamage *= 1.5f;
             target.TakeDamage(weaponDamage);
         }
         else { return; }
@@ -72,18 +89,13 @@ public class Weapon : MonoBehaviour
     {
         while(isShooting)
         {
-            weaponDamage *= 1.5f;
             Shoot();
             yield return new WaitForSeconds(shootingDelay);
         }
         
     }
-
     void WeaponDamageReset()
     {
-        if(isShooting == false)
-        {
-            weaponDamage = 1f;
-        }
+        weaponDamage = 1f;
     }
 }

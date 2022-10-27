@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5528586673787396504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7525166414067736493}
+  - component: {fileID: 7026196551662922785}
+  - component: {fileID: 4466839799060503781}
+  - component: {fileID: 4086500782373052580}
+  m_Layer: 0
+  m_Name: Tablet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7525166414067736493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528586673787396504}
+  m_LocalRotation: {x: 0.09487138, y: -0.22649126, z: 0.02217202, w: 0.96912825}
+  m_LocalPosition: {x: 0.0342, y: -0.0019, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7707421731589291705}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 11.182, y: -26.309, z: 0}
+--- !u!33 &7026196551662922785
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528586673787396504}
+  m_Mesh: {fileID: 4300000, guid: 53ee823ff543aa24d855d8f9f8c2b87b, type: 3}
+--- !u!23 &4466839799060503781
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528586673787396504}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 05ebba48484e3b1478045899e21d98da, type: 2}
+  - {fileID: 2100000, guid: 017a6494a230b02479a30169fe2e1cf1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4086500782373052580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5528586673787396504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a60b8b649f6df4aa0f326764013cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  range: 100
+  weaponDamage: 10
+  shootingDelay: 0.5
+  muzzleEffect: {fileID: 6374494205139601904}
+  hitEffect: {fileID: 5025529312689536409, guid: 7d51169006077c845b879f4d82e7eed1, type: 3}
+  mainCamera: {fileID: 0}
+  ammoSlot: {fileID: 0}
+--- !u!1001 &6916883200375615549
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7525166414067736493}
+    m_Modifications:
+    - target: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0398
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1579
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.115300015
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333026328939916084, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+      propertyPath: m_Name
+      value: TabletMuzzleFlash
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+--- !u!198 &6374494205139601904 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 543655909660867021, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+  m_PrefabInstance: {fileID: 6916883200375615549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7707421731589291705 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3822420997647109764, guid: 88d4c91a4f662f24d8e2e749d35fec76, type: 3}
+  m_PrefabInstance: {fileID: 6916883200375615549}
+  m_PrefabAsset: {fileID: 0}
