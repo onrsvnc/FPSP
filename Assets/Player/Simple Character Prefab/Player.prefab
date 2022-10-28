@@ -411,7 +411,6 @@ GameObject:
   - component: {fileID: 2448415376926472157}
   - component: {fileID: 1074468753481359302}
   - component: {fileID: 8189220531728846206}
-  - component: {fileID: 711463141187122513}
   - component: {fileID: 899743609}
   m_Layer: 2
   m_Name: Player
@@ -619,22 +618,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &711463141187122513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8222694995927617946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5936cc07012c4b41acec42d8c3c14e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zoomIn: 30
-  zoomOut: 60
-  zoomOutSens: 3
-  zoomInSens: 0.5
 --- !u!114 &899743609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,4 +630,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b9709bb57a58d479f4d45a50a6f8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 100
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 10
+  - ammoType: 1
+    ammoAmount: 15
+  - ammoType: 2
+    ammoAmount: 20

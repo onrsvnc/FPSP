@@ -39,8 +39,8 @@ public class WeaponZoom : MonoBehaviour
         
     }
 
-    
-
-
-
+    public void ZoomOutOnWeaponSwitch()
+    {
+        mainCam.fieldOfView = zoomOut;
+    }
 }

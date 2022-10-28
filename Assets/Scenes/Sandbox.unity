@@ -5824,38 +5824,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 97330095132634460, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.005
-      objectReference: {fileID: 0}
-    - target: {fileID: 97330095132634460, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.327
-      objectReference: {fileID: 0}
-    - target: {fileID: 97330095132634460, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.064
-      objectReference: {fileID: 0}
-    - target: {fileID: 733412221360930756, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: dbb1966c7d20d47428ee821b9c864228, type: 3}
-    - target: {fileID: 1268519878367547311, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: range
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 1268519878367547311, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 899743609}
-    - target: {fileID: 1776758739301182908, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2816709405508825725, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2864808303298753937, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
       propertyPath: player
       value: 
@@ -5908,6 +5880,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2864808303298753939, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
+      propertyPath: m_FocalLength
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 2864808303298753942, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -5916,37 +5892,17 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 899743609}
-    - target: {fileID: 3736099532362308117, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: prewarm
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5987993932173620033, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: range
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5987993932173620033, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 899743609}
-    - target: {fileID: 5987993932173620033, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: hitEffect
-      value: 
-      objectReference: {fileID: 5025529312689536409, guid: 86d4e6cb578b6d64480408e80c93de14, type: 3}
-    - target: {fileID: 6220294824092798720, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: m_StitchLightmapSeams
-      value: 1
+    - target: {fileID: 6922178252428656708, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
+      propertyPath: zoomIn
+      value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 6220294824092798720, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a967d4aaafacd3b49b677db2b17b8b06, type: 2}
-    - target: {fileID: 6220294824092798720, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 836031abf90a6214e83a7d69d98065f1, type: 2}
-    - target: {fileID: 6728693377181311668, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 6922178252428656708, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
+      propertyPath: zoomOut
+      value: 58.73
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7778233898ae51c40afb7092ca72a122, type: 3}
@@ -16061,6 +16017,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 899743598}
+    - target: {fileID: 2869753549543143705, guid: edf388a9684dc0f4f9133b9e10daa9d8, type: 3}
+      propertyPath: chaseRange
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6942763890526135560, guid: edf388a9684dc0f4f9133b9e10daa9d8, type: 3}
       propertyPath: target
       value: 

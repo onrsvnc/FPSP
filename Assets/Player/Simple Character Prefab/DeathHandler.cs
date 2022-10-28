@@ -18,5 +18,7 @@ public class DeathHandler : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         FindObjectOfType<SFPSC_FPSCamera>().enabled = false;
+        FindObjectOfType<WeaponSwitcher>().enabled = false;
+        FindObjectOfType<WeaponZoom>().enabled = false;
     }
 }

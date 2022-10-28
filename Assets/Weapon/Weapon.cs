@@ -13,6 +13,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject hitEffect;
     [SerializeField] GameObject mainCamera;
     [SerializeField] Ammo ammoSlot;
+    [SerializeField] AmmoType ammoType;
+    [SerializeField] float channelingDamage = 1.5f;
 
 
     bool isShooting = false;
@@ -40,11 +42,11 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
-        if(ammoSlot.GetCurrentAmmo() > 0)
+        if(ammoSlot.GetCurrentAmmo(ammoType) > 0)
         {
             PlayMuzzleEffect();
             ProcessRaycast();
-            ammoSlot.ReduceCurrentAmmo();
+            ammoSlot.ReduceCurrentAmmo(ammoType);
         } 
         else
         {
@@ -73,7 +75,7 @@ public class Weapon : MonoBehaviour
             }
             
             //todo we can add here another hit effect for enemy hits
-            weaponDamage *= 1.5f;
+            weaponDamage *= channelingDamage;
             target.TakeDamage(weaponDamage);
         }
         else { return; }
