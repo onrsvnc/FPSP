@@ -51,8 +51,6 @@ public class WeaponSwitcher : MonoBehaviour
                 currentWeapon --;
             }
         }
-
-
     }
 
     void ProcessKeyInput()
