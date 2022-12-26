@@ -2,10 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class WeaponSwitcher : MonoBehaviour
 {
     [SerializeField] int currentWeapon = 0;
+    [SerializeField] WeaponUIScroller weaponScroller;
 
 
     void Start()
@@ -19,6 +22,7 @@ public class WeaponSwitcher : MonoBehaviour
 
         ProcessKeyInput();
         ProcessScrollWheel();
+        weaponScroller.ScrollWeaponInUI(currentWeapon);
 
         if(previousWeapon != currentWeapon)
         {
@@ -90,6 +94,7 @@ public class WeaponSwitcher : MonoBehaviour
         }
 
     }
+
 }
 
 
