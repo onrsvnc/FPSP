@@ -54,6 +54,8 @@ MonoBehaviour:
   hitEffect: {fileID: 5025529312689536409, guid: 7d51169006077c845b879f4d82e7eed1, type: 3}
   mainCamera: {fileID: 0}
   ammoSlot: {fileID: 0}
+  ammoType: 0
+  channelingDamage: 1.5
 --- !u!1001 &3757020103122732824
 PrefabInstance:
   m_ObjectHideFlags: 0

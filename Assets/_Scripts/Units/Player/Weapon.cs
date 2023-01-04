@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -15,6 +16,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
     [SerializeField] float channelingDamage = 1.5f;
+    [SerializeField] TextMeshProUGUI ammoText;
 
 
     bool isShooting = false;
@@ -34,10 +36,13 @@ public class Weapon : MonoBehaviour
             isShooting = false;
             muzzleEffect.Stop();
         }
+
         if(isShooting == false)
         {
             WeaponDamageReset();
         }
+
+        DisplayAmmo();
     }
 
     void Shoot()
@@ -99,5 +104,10 @@ public class Weapon : MonoBehaviour
     void WeaponDamageReset()
     {
         weaponDamage = 1f;
+    }
+
+    void DisplayAmmo()
+    {
+        ammoText.text = "Ammo: " + ammoSlot.GetCurrentAmmo(ammoType).ToString();
     }
 }
