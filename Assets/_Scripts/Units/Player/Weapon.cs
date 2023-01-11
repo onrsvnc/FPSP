@@ -108,6 +108,6 @@ public class Weapon : MonoBehaviour
 
     void DisplayAmmo()
     {
-        ammoText.text = "Ammo: " + ammoSlot.GetCurrentAmmo(ammoType).ToString();
+        ammoText.text = "Charge: " + ammoSlot.GetCurrentAmmo(ammoType).ToString();
     }
 }
